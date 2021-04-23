@@ -80,22 +80,22 @@ local section2a = page2a:addSection("Esp")
 	local FillAlpha
 sectionEsp:addToggle("Fill alpha", nil, function(bool)
 		FillAlpha = bool
-	end)
+end)
 	
 	local ShowName
 sectionEsp:addToggle("Show Name", nil, function(bool)
 		ShowName = bool
-	end)
+end)
 
 	local ShowDistance
 sectionEsp:addToggle("Show distance", nil, function(bool)
 		ShowDistance = bool
-	end)
+end)
 
 	local ShowHealth
 sectionEsp:addToggle("Show health", nil, function(bool)
 		ShowHealth = bool
-	end)
+end)
 	
 --Two page
 local page2 = venyx:addPage("Autofarm", 5012544693)
