@@ -73,29 +73,29 @@ local page2a = venyx:addPage("ESP/XRAY", 5012544693)
 local section2a = page2a:addSection("Esp")
 
 	local BoundingBox
-	sectionEsp:addToggle("Bounding box", nil, function(bool)
+	section2a:addToggle("Bounding box", nil, function(bool)
 		BoundingBox = bool
 	end)
 
 	local FillAlpha
-sectionEsp:addToggle("Fill alpha", nil, function(bool)
+    section2a:addToggle("Fill alpha", nil, function(bool)
 		FillAlpha = bool
-end)
+    end)
 	
 	local ShowName
-sectionEsp:addToggle("Show Name", nil, function(bool)
+    section2a:addToggle("Show Name", nil, function(bool)
 		ShowName = bool
-end)
+    end)
 
 	local ShowDistance
-sectionEsp:addToggle("Show distance", nil, function(bool)
+    section2a:addToggle("Show distance", nil, function(bool)
 		ShowDistance = bool
-end)
+    end)
 
 	local ShowHealth
-sectionEsp:addToggle("Show health", nil, function(bool)
+    section2a:addToggle("Show health", nil, function(bool)
 		ShowHealth = bool
-end)
+    end)
 	
 --Two page
 local page2 = venyx:addPage("Autofarm", 5012544693)
