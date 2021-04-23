@@ -78,22 +78,22 @@ local sectionEsp = page:addSection("Esp")
 	end)
 
 	local FillAlpha
-	sectionEsp:addToggle("Fill alpha", nil, function(bool)
+sectionEsp:addToggle("Fill alpha", nil, function(bool)
 		FillAlpha = bool
 	end)
 	
 	local ShowName
-	sectionEsp:addToggle("Show Name", nil, function(bool)
+sectionEsp:addToggle("Show Name", nil, function(bool)
 		ShowName = bool
 	end)
 
 	local ShowDistance
-	sectionEsp:addToggle("Show distance", nil, function(bool)
+sectionEsp:addToggle("Show distance", nil, function(bool)
 		ShowDistance = bool
 	end)
 
 	local ShowHealth
-	sectionEsp:addToggle("Show health", nil, function(bool)
+sectionEsp:addToggle("Show health", nil, function(bool)
 		ShowHealth = bool
 	end)
 	
