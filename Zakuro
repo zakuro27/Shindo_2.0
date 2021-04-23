@@ -69,8 +69,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/6Wumpus6/SpyHub/main/
 end)
 
 --first page bis
-local pageEsp = venyx:addPage("ESP/XRAY", 5012544693)
-local sectionEsp = page:addSection("Esp")
+local page2a = venyx:addPage("ESP/XRAY", 5012544693)
+local section2a = page2a:addSection("Esp")
 
 	local BoundingBox
 	sectionEsp:addToggle("Bounding box", nil, function(bool)
