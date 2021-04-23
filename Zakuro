@@ -71,6 +71,15 @@ end)
 --first page bis
 local page = venyx:addPage("ESP/XRAY", 5012544693)
 local sectionESP = page:addSection("ESP")
+local custom_theme = {} --soon
+ 
+local function CreateInstance(cls,props)
+local inst = Instance.new(cls)
+for i,v in pairs(props) do
+    inst[i] = v
+end
+return inst
+end
 
 local age1 = CreateInstance('ScreenGui',{DisplayOrder=0,Enabled=true,ResetOnSpawn=true,Name='age1', Parent=game.CoreGui})
 local p_visuals = CreateInstance('Frame',{Style=Enum.FrameStyle.Custom,Active=true,AnchorPoint=Vector2.new(0, 0),BackgroundColor3=Color3.new(0.121569, 0.12549, 0.172549),BackgroundTransparency=0,BorderColor3=Color3.new(1, 0, 0.498039),BorderSizePixel=2,ClipsDescendants=false,Draggable=false,Position=UDim2.new(0, 50, 0, 60),Rotation=0,Selectable=false,Size=UDim2.new(0, 200, 0, 254),SizeConstraint=Enum.SizeConstraint.RelativeXY,Visible=true,ZIndex=1,Name = 'p_visuals',Parent = age1})
