@@ -69,7 +69,34 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/6Wumpus6/SpyHub/main/
 end)
 
 --first page bis
+local pageEsp = venyx:addPage("ESP/XRAY", 5012544693)
+local sectionEsp = page:addSection("Esp")
 
+	local BoundingBox
+	sectionEsp:addToggle("Bounding box", nil, function(bool)
+		BoundingBox = bool
+	end)
+
+	local FillAlpha
+	sectionEsp:addToggle("Fill alpha", nil, function(bool)
+		FillAlpha = bool
+	end)
+	
+	local ShowName
+	sectionEsp:addToggle("Show Name", nil, function(bool)
+		ShowName = bool
+	end)
+
+	local ShowDistance
+	sectionEsp:addToggle("Show distance", nil, function(bool)
+		ShowDistance = bool
+	end)
+
+	local ShowHealth
+	sectionEsp:addToggle("Show health", nil, function(bool)
+		ShowHealth = bool
+	end)
+	
 --Two page
 local page2 = venyx:addPage("Autofarm", 5012544693)
 local Farm = page2:addSection("Mission Farm")
